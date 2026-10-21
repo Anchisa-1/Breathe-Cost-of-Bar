@@ -38,7 +38,7 @@ const cloudValid=d=>d&&Array.isArray(d.ingredients)&&Array.isArray(d.recipes)&&
   d.ingredients.every(x=>x&&typeof x.id==='string'&&typeof x.name==='string')&&
   d.recipes.every(x=>x&&Array.isArray(x.lines));
 // Public browser-safe project identifiers; never put secret keys or passwords here.
-const sbCredentials=()=>({url:'https://npsatrfanfyuhcbsikyt.supabase.co',key:'sb_publishable_s2DNYcUA6UYwZFrB4iJngQ_v1ZEIj6L'});
+const sbCredentials=()=>({url:'https://npsatrfanfyuhcbsikyt.supabase.co',key:'sb_publishable_s2DNYcUA6UYwZFrB4iJngQ_v1ZElj6L'});
 async function connectCloud(){
   if(!window.supabase?.createClient){cloudStatus('Supabase SDK โหลดไม่สำเร็จ ตรวจสอบอินเทอร์เน็ต');return}
   const {url,key}=sbCredentials();
